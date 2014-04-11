@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3c.org/1999/xhtml"  
+   xmlns:f="http://java.sun.com/jsf/core"  
+   xmlns:h="http://java.sun.com/jsf/html"       
+   xmlns:p="http://primefaces.org/ui"
+   xmlns:ui="http://java.sun.com/jsf/facelets"
+   >  
+ <h:head>
+         <script src="js/jquery.min.js"></script>
+         <script src="js/jquery.ui.widget.js"></script> 
+         <script src="js/jquery.ui.accordion.js"></script> 
+         <script src="js/jquery.Jcrop.min.js"></script> 
+        <script src="js/jcrop_main.js"></script> 
+        
+         
+
+      <!-- <link rel="stylesheet" href="css/jquery.ui.theme.css" type="text/css" /> -->
+     <!--  <link rel="stylesheet" href="css/jquery.ui.accordion.css" type="text/css" /> -->
+       <link rel="stylesheet" href="css/jquery.Jcrop.css" type="text/css" /> 
+      <!-- <link rel="stylesheet" href="css/jcrop_main.css" type="text/css" /> -->
+</h:head>
+ <h:body> 
+         <p:commandButton type="button" onclick="PF('switcher').previous();" 
+              icon="ui-icon-circle-triangle-w"/>
+         <p:commandButton type="button" onclick="PF('switcher').next();"  
+              icon="ui-icon-circle-triangle-e"/>
+              
+              <div class="jcrop_example">
+
+    <div id="accordion" class="accordion">
+  
+        <div class="sample_2">
+        <img src="images/nature4.jpg" id="cropbox2" />
+          
+
+            <div style="margin: 20px 0;">
+                <button id="anim1">Position 1</button>
+                <button id="anim2">Position 2</button>
+                <button id="anim3">Position 3</button>
+                <button id="anim4">Position 4</button>
+                <button id="anim5">Position 5</button>
+            </div>
+
+            
+        </div>
+    </div>
+
+</div>
+
+<h:form>							
+	<h:panelGrid columns="4" cellpadding="5">
+		<h:outputLabel for="contenu" value="CONTENU:" style="font-weight:bold"/>
+		<p:inputText id="contenu" value="#{contenu.cont}" />
+		<p:commandButton value="Save"  action="#{contenu.save}"/>
+		
+        <h:outputText value="#{contenu.cont}" />
+	</h:panelGrid>	
+</h:form>
+
+ </h:body>  
+ </html> 

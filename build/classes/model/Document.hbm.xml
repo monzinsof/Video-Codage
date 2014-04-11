@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 avr. 2014 11:47:01 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="model.Document" table="DOCUMENT">
+        <id name="id_document" type="int">
+            <column name="ID_DOCUMENT" />
+            <generator class="native" />
+        </id>
+        <property name="nom_document" type="java.lang.String">
+            <column name="NOM_DOCUMENT" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+    </class>
+</hibernate-mapping>

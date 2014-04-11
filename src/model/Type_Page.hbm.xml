@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 8 avr. 2014 21:20:11 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="model.Type_Page" table="TYPE_PAGE">
+        <id name="id_type_page" type="int">
+            <column name="ID_TYPE_PAGE" />
+            <generator class="assigned" />
+        </id>
+        <property name="id_document" type="int">
+            <column name="ID_DOCUMENT" />
+        </property>
+        <property name="path_page" type="char">
+            <column name="PATH_PAGE" />
+        </property>
+    </class>
+</hibernate-mapping>

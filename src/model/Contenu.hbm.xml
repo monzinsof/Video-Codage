@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9 avr. 2014 00:39:12 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="model.Contenu" table="CONTENU">
+        <id name="id_contenu" type="int">
+            <column name="ID_CONTENU" />
+            <generator class="native" />
+        </id>
+        <property name="id_zone" type="int">
+            <column name="ID_ZONE" />
+        </property>
+        <property name="id_document" type="int">
+            <column name="ID_DOCUMENT" />
+        </property>
+        <property name="id_type_page" type="int">
+            <column name="ID_TYPE_PAGE" />
+        </property>
+        <property name="cont" type="java.lang.String">
+            <column name="CONT" />
+        </property>
+        <property name="path_img" type="char">
+            <column name="PATH_IMG" />
+        </property>
+    </class>
+</hibernate-mapping>
